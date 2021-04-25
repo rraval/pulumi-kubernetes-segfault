@@ -16,25 +16,25 @@ clusters:
 - cluster:
     certificate-authority-data: ${gotCluster.masterAuths[0].clusterCaCertificate}
     server: https://${gotCluster.endpoint}
-  name: ${context}
+name: ${context}
 contexts:
 - context:
     cluster: ${context}
     user: ${context}
-  name: ${context}
+name: ${context}
 current-context: ${context}
 kind: Config
 preferences: {}
 users:
 - name: ${context}
-  user:
+user:
     auth-provider:
-      config:
+    config:
         cmd-args: config config-helper --format=json
         cmd-path: gcloud
         expiry-key: '{.credential.token_expiry}'
         token-key: '{.credential.access_token}'
-      name: gcp
+    name: gcp
 `;
 });
 
