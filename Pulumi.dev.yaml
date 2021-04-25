@@ -1,0 +1,4 @@
+config:
+  gcp:project: propane-flow-305802
+  gcp:region: us-central1
+  gcp:zone: us-central1-a

@@ -1,0 +1,3 @@
+name: pulumi-kubernetes-segfault
+runtime: nodejs
+description: Repro to segfault Pulumi with a bad configuration
